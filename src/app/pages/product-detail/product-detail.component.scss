@@ -1,0 +1,97 @@
+@import "colors";
+@import "common";
+@import "mixins";
+.product-detail {
+  flex-direction: column;
+  @include large-up {
+    flex-direction: row;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include large-up {
+      align-items: flex-start;
+    }
+  }
+  &__top,
+  &__bottom {
+    @include large-up {
+      flex: 1;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      padding: 2rem;
+      border: 3px solid $brachs-dark-purple;
+      background-color: white;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+  }
+
+  &__sizes {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0.5rem;
+      li {
+        border: 2px solid $brachs-pink;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: $brachs-dark-purple;
+        font-size: 22px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__nutrition,
+  &__ingredients {
+    font-size: 22px;
+    color: $brachs-dark-purple;
+    text-transform: uppercase;
+    padding: 1rem 1rem 1rem 0;
+    border-top: 2px solid $brachs-pink;
+  }
+  &__nutrition {
+    margin-top: 1rem;
+  }
+
+  &__ingredients {
+    border-bottom: 2px solid $brachs-pink;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    @include large-up {
+      flex-direction: row;
+    }
+    a {
+      flex: 1;
+    }
+    button {
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      @include large-up {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .collapse {
+    margin-bottom: 1rem;
+  }
+}

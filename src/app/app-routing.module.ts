@@ -6,6 +6,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { CopyImageComponent } from './components/copy-image/copy-image.component';
 import { FullBleedComponent } from './components/full-bleed/full-bleed.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselCardComponent } from './components/carousel-card/carousel-card.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +17,9 @@ const routes: Routes = [
   { path: 'components/copy-image', component: CopyImageComponent },
   { path: 'components/full-bleed', component: FullBleedComponent },
   { path: 'components/footer', component: FooterComponent },
+  { path: 'components/carousel-card', component: CarouselCardComponent },
+  { path: 'components/carousel', component: CarouselComponent },
+  { path: 'pages/product-detail', component: ProductDetailComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,9 @@
 /* Base css */
 button.btn {
-  background-color: $brachs-purple;
+  background-color: $brachs-dark-purple;
   font-size: 28px;
   color: white;
   text-transform: uppercase;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
 }

@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { CopyImageComponent } from './components/copy-image/copy-image.component';
 import { FullBleedComponent } from './components/full-bleed/full-bleed.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselCardComponent } from './components/carousel-card/carousel-card.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     CopyImageComponent,
     FullBleedComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselCardComponent,
+    CarouselComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
