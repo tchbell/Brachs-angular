@@ -1,0 +1,96 @@
+@import "colors";
+@import "mixins";
+/* End Header */
+/* Footer Css */
+
+.footer {
+  $self: &;
+  color: white;
+  &__top {
+    padding: 2rem 0;
+    background-color: $brachs-dark-purple;
+    #{ $self }__inputs.col-12 {
+      display: flex;
+      flex-direction: column;
+      @include large-up {
+        flex-direction: row;
+        margin-bottom: 1rem;
+      }
+      input {
+        margin-bottom: 1rem;
+        padding: 0.35rem;
+        @include large-up {
+          margin: 0 0.5rem;
+        }
+        margin-bottom: 0;
+        &::placeholder {
+          text-align: center;
+          color: gray;
+          @include large-up {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    background: $offseason-gradient;
+    padding: 2rem 0;
+    #{ $self }__logo.col-12 {
+      @include large-up {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+    #{ $self }__copyright.col-12 {
+      align-items: flex-start;
+    }
+  }
+
+  &__privacy {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  button.btn {
+    background-color: $brachs-light-pink;
+    color: black;
+    font-weight: bold;
+  }
+
+  .col-12 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    @include large-up {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      @include large-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {
+          content: "|";
+          font-size: 1.2rem;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+}

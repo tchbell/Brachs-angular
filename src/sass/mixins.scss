@@ -1,0 +1,28 @@
+// Medium devices (Tablets, 670px and up)
+@mixin medium-up {
+  @media (min-width: 576px) {
+    @content;
+  }
+  // @media screen and (min-width: 670px) {
+  // }
+}
+// Large devices (Desktops, 1020px and up)
+@mixin large-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+//  X Large devices (Large Screens, 1440px and up)
+@mixin x-large-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+//
+
+@mixin header-mobile {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}

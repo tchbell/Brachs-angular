@@ -1,0 +1,4 @@
+// importing all bootstrap scss
+@import "bootstrap";
+// fonts is placed after bootstrap to override any bootstrap font styles
+@import "./fonts.scss";
