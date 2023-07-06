@@ -1,3 +1,4 @@
+@import "mixins";
 /* Base css */
 button.btn {
   background-color: $brachs-dark-purple;
@@ -9,5 +10,8 @@ button.btn {
   font-weight: 700;
   @include medium-up {
     font-size: 28px;
+  }
+  &.orange {
+    background-color: $halloween-orange;
   }
 }

@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-copy-image',
   templateUrl: './copy-image.component.html',
-  styleUrls: ['./copy-image.component.sass']
+  styleUrls: ['./copy-image.component.scss'],
 })
 export class CopyImageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

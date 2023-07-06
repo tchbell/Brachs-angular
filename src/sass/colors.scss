@@ -4,6 +4,30 @@ $brachs-purple: rgb(138, 26, 155);
 $brachs-pink: rgb(206, 0, 159);
 $brachs-dark-purple: #592998;
 $brachs-light-pink: #ff79c4;
+$offseason-gradient: linear-gradient(to right, $brachs-purple, $brachs-pink);
+// $halloween-gradient: linear-gradient(
+//   to right,
+//   $halloween-orange,
+//   $halloween-light-orange
+// );
+
 $brachs-black: #2b2b2b;
 $seashell: #f9f7f5;
-$offseason-gradient: linear-gradient(to right, $brachs-purple, $brachs-pink);
+
+// Offseason Colors
+$primary: rgb(138, 26, 155);
+$secondary: rgb(206, 0, 159);
+$primary-dark: rgb(89, 41, 152);
+$secondary-light: rgb(255, 121, 196);
+
+// Halloween Theme
+$halloween-orange: #fe4613;
+$halloween-light-orange: #ff8900;
+$halloween-yellow: #edb943;
+$halloween-green: #c3cd4c;
+.halloween {
+  $halloween-orange: #fe4613;
+  $halloween-light-orange: #ff8900;
+  $halloween-yellow: #edb943;
+  $halloween-green: #c3cd4c;
+}

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    background: red;
+  }
+}
