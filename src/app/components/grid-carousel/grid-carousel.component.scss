@@ -1,0 +1,55 @@
+@import "colors";
+@import "common";
+@import "mixins";
+
+.grid-carousel {
+  @include medium-up {
+    display: flex;
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__heading {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    @include medium-up {
+      justify-content: space-between;
+    }
+    &--title {
+      font-family: "apertura", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    @include medium-up {
+      font-size: 60px;
+    }
+  }
+  .col-md-4 {
+    @include medium-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__cta {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    @include medium-up {
+      display: flex;
+    }
+  }
+  &__cta--desktop {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    @include medium-up {
+      display: none;
+    }
+  }
+}

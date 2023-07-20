@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarouselCardComponent } from './components/carousel-card/carousel-card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { GridCarouselComponent } from './components/grid-carousel/grid-carousel.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'components/footer', component: FooterComponent },
   { path: 'components/carousel-card', component: CarouselCardComponent },
   { path: 'components/carousel', component: CarouselComponent },
+  { path: 'components/grid-carousel', component: GridCarouselComponent },
   { path: 'pages/product-detail', component: ProductDetailComponent },
 ];
 

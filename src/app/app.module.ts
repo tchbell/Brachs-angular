@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarouselCardComponent } from './components/carousel-card/carousel-card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { GridCarouselComponent } from './components/grid-carousel/grid-carousel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
     FooterComponent,
     CarouselCardComponent,
     CarouselComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    GridCarouselComponent
   ],
   imports: [
     BrowserModule,
