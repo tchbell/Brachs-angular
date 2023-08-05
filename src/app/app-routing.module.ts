@@ -10,6 +10,7 @@ import { CarouselCardComponent } from './components/carousel-card/carousel-card.
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { GridCarouselComponent } from './components/grid-carousel/grid-carousel.component';
+import { RecipePageComponent } from './pages/recipe-page/recipe-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'components/carousel', component: CarouselComponent },
   { path: 'components/grid-carousel', component: GridCarouselComponent },
   { path: 'pages/product-detail', component: ProductDetailComponent },
+  { path: 'pages/recipe-page', component: RecipePageComponent },
 ];
 
 @NgModule({

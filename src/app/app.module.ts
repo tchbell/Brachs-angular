@@ -13,6 +13,7 @@ import { CarouselCardComponent } from './components/carousel-card/carousel-card.
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { GridCarouselComponent } from './components/grid-carousel/grid-carousel.component';
+import { RecipePageComponent } from './pages/recipe-page/recipe-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GridCarouselComponent } from './components/grid-carousel/grid-carousel.
     CarouselCardComponent,
     CarouselComponent,
     ProductDetailComponent,
-    GridCarouselComponent
+    GridCarouselComponent,
+    RecipePageComponent
   ],
   imports: [
     BrowserModule,

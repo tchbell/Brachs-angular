@@ -1,0 +1,122 @@
+@import "colors";
+@import "mixins";
+@import "common";
+.recipe {
+  background-color: $seashell;
+  &__top {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  &__commands,
+  &__details {
+    background-color: $brachs-dark-purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.375rem;
+    font-family: "apertura", sans-serif;
+    margin: 1rem auto;
+    padding: 1rem;
+    @include medium-up {
+      margin: 2rem 1rem;
+      font-size: 2.1875rem;
+    }
+  }
+  &__product {
+    border: 5px solid $brachs-purple;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  &__ingredients {
+    background-color: $brachs-dark-purple;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    &--title {
+      border-bottom: 2px solid $brachs-light-pink;
+      font-weight: bold;
+      font-size: 1.25rem;
+      width: 100%;
+      @include medium-up {
+        font-size: 2.5rem;
+      }
+    }
+    ul {
+      padding-left: 1rem;
+      li {
+        padding: 1rem 0;
+        font-size: 1.125rem;
+        @include medium-up {
+          font-size: 1.875rem;
+        }
+      }
+    }
+  }
+  &__instructions {
+    &--title {
+      font-size: 1.625rem;
+      font-weight: bold;
+      @include medium-up {
+        font-size: 3.75rem;
+      }
+    }
+    &--images {
+      display: flex;
+      gap: 1rem;
+    }
+    &--steps {
+      ol {
+        list-style: none;
+        counter-reset: custom-counter;
+        padding-left: 20px; /* Adjust as needed to make space for the image */
+        margin-top: 2rem;
+        li {
+          counter-increment: custom-counter;
+          position: relative;
+          padding-left: 60px;
+          padding-top: 1rem;
+          margin-bottom: 3rem;
+          font-size: 1.375rem;
+          &::before {
+            font-weight: bold;
+
+            content: counter(custom-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px; /* Adjust the width to match your image width */
+            height: 50px; /* Adjust the height to match your image height */
+            background-image: url("/assets/pink-star.svg"); /* Replace with the path to your image */
+            background-size: cover; /* Adjust the background size as needed */
+            background-position: center center; /* Center the background image */
+            // color:; /* Hide the default number */
+            text-align: center;
+            line-height: 20px; /* Match the height to vertically center the number */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
